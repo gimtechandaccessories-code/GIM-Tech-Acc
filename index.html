@@ -685,7 +685,19 @@
     font-family:var(--font-display);
     letter-spacing:.04em;
   }
-</style>
+  .faq-list{ max-width:760px; margin:0 auto; }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-item summary{
+    list-style:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:14px 4px;
+    font-family:var(--font-display); font-size:13.5px;
+    color:var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary::after{ content:"+"; color:var(--violet-300); font-size:18px; }
+  .faq-item[open] summary::after{ content:"–"; }
+  .faq-item p{ color:var(--ink-soft); font-size:13.5px; padding:0 4px 16px; }</style>
 </head>
 <body>
 
